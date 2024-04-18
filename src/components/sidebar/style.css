@@ -1,0 +1,15 @@
+.sidebar{
+    background-color: var(--main-bgcolor);
+    min-height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.sidebar.flex-between{
+    flex-direction: column;
+}
+.chat{
+    margin: 30px 0 15px 0;
+}

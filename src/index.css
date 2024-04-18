@@ -1,0 +1,15 @@
+/* general-styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+:root{
+  --main-bgcolor: rgb(241, 241, 241);
+}
+i{
+  cursor: pointer;
+}

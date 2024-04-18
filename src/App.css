@@ -1,0 +1,14 @@
+/* common-styles */
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
