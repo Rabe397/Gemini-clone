@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
 }
 :root{
-  --main-bgcolor: rgb(241, 241, 241);
+  --main-bgcolor: rgb(219, 219, 219);
 }
 i{
   cursor: pointer;

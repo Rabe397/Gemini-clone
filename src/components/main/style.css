@@ -1,0 +1,97 @@
+main{
+    width: 100%;
+    margin: 200px auto 0 auto;
+    padding: 0 400px;
+}
+.greet{
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    background: linear-gradient(16deg,#4b90ff,#ff5546);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.today{
+    color: rgb(190, 188, 188);
+}
+.boxes-container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+}
+.box{
+    border: 1px solid black;
+    background-color: var(--main-bgcolor);
+    padding: 10px;
+    border-radius: 7px;
+}
+.box:hover{
+    background-color: rgb(117, 114, 114);
+}
+.box .bottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.result{
+    width: 100%;
+    max-height: 30vh;
+    overflow-y: scroll;
+}
+.result-data.flex{
+    align-items: flex-start;
+    gap: 50px;
+}
+.gemini-icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.result::-webkit-scrollbar{
+    display: none;
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.loader hr{
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right,#9ed7ff,#ffffff,#9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+.result-data p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+@keyframes loader{
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+.prompt{
+    margin-top: 30px;
+    background-color: var(--main-bgcolor);
+    padding: 10px;
+    border-radius: 7px;
+}
+.prompt input{
+    /* width: 100%; */
+    border: none;
+    outline: none;
+    background-color: var(--main-bgcolor);
+
+}
+.dbl-check{
+    text-align: center;
+    margin-top: 20px;
+}
